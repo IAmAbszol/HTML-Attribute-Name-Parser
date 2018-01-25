@@ -10,7 +10,7 @@ public class HTMLParser {
 	public static void main(String[] args) {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(new File(args[0])));
-			PrintWriter writer = new PrintWriter(new File("C:\\Users\\Kyle\\Desktop\\tmp.txt"));
+			PrintWriter writer = new PrintWriter(new File(args[1]));
 			String line = null;
 			while((line = reader.readLine()) != null) {
 				// remove !line.contains("td")) as I only used id's for that.
